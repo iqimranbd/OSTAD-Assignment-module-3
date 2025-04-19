@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning repository...'
-                git 'https://github.com/iqimranbd/OSTAD-Assignment-module-3.git'
+                git branch: 'main', url: 'https://github.com/iqimranbd/OSTAD-Assignment-module-3'
             }
         }
         stage('Install') {
